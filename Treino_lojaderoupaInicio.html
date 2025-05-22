@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BELLIZZA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .top-bar {
+      background-color: #FFDCF0;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .top-bar .brand-name {
+      font-size: 36px;
+      font-weight: bold;
+      color: white;
+      margin: 0 auto;
+      font-family: 'Georgia', serif;
+      text-transform: uppercase;
+    }
+
+    .top-bar .icon,
+    .top-bar .icons a {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .benefits {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    flex-wrap: wrap;
+    margin-top: 30px; /* <-- adiciona espaço entre barra e ícones */
+    }
+
+
+    .benefit-item {
+      color: #333;
+    }
+
+    .benefit-item i {
+    font-size: 60px; /* Dobrado em relação aos 30px */
+    color: #FFDCF0;
+    margin-bottom: 5px;
+}
+
+
+    .benefit-item p {
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .product-card {
+      text-align: center;
+      max-width: 220px;
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #FFDCF0;
+      color: white;
+      border: none;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .categories img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+      border: 3px solid #FFDCF0;
+    }
+
+    footer {
+      background-color: #FFDCF0;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra Superior -->
+  <header class="top-bar">
+    <a href="menu.html" class="icon left"><i class="fas fa-bars"></i></a>
+    <h1 class="brand-name">BELLIZZA</h1>
+    <div class="icons right">
+      <a href="notificacoes.html"><i class="fas fa-bell"></i></a>
+      <a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </header>
+
+  <!-- Benefícios -->
+  <section class="benefits">
+    <div class="benefit-item">
+      <i class="fas fa-truck"></i>
+      <p>FRETE GRÁTIS</p>
+      <small>Nas compras acima de R$599,00</small>
+    </div>
+    <div class="benefit-item">
+      <i class="fas fa-tag"></i>
+      <p>10% DE DESCONTO</p>
+      <small>Na sua primeira compra acima de R$200,00<br />
+        usando o cupom: <strong>PRIMEIRACOMPRA</strong></small>
+    </div>
+    <div class="benefit-item">
+      <i class="fas fa-credit-card"></i>
+      <p>PARCELAMENTO</p>
+      <small>Em até 4x sem juros ou em até 8x</small>
+    </div>
+  </section>
+
+  <!-- Novidades -->
+  <section class="section-title">NOVIDADES</section>
+  <section class="products">
+    <div class="product-card">
+      <img src="https://i.pinimg.com/736x/d6/be/ad/d6bead6e1c4d0161b90c228f6124a1f1.jpg" alt="Produto 1" />
+      <h3>Vestido Elegance</h3>
+      <p>R$ 799,00</p>
+      <small>Até 4x de R$199,75</small>
+      <a href="produto1.html" class="btn">COMPRAR</a>
+    </div>
+    <div class="product-card">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhorjv0WZEOWimZTRpJcAodalEuuUwwz6lNd5OJJem_Ai0MR2xsbYL7eH6m3lbBWt59WAockWtm4i6-Om8JWs4IkIIaOvyywEey5mPHmDjb9Si0YGygFr93bhmFWKBoOOiKjCdDodc5vuXx1io3Gc7RtPzrV7v9mDh10rlpgMGoJHECnUaKfxL5mhW23qMQ/w426-h640/3f8a38de3032c171c8cc6dfae727daee.jpg" alt="Produto 2" />
+      <h3>Blazer Royal</h3>
+      <p>R$ 649,00</p>
+      <small>Até 4x de R$162,25</small>
+      <a href="produto2.html" class="btn">COMPRAR</a>
+    </div>
+    <div class="product-card">
+      <img src="https://i.pinimg.com/736x/ce/87/82/ce8782a2b776b7da5bc60988f637ec49.jpg" alt="Produto 3" />
+      <h3>Saia Dourada</h3>
+      <p>R$ 459,00</p>
+      <small>Até 3x de R$153,00</small>
+      <a href="produto3.html" class="btn">COMPRAR</a>
+    </div>
+    <div class="product-card">
+      <img src="https://i.pinimg.com/736x/4f/57/98/4f5798c52734b459e705aa6c26925d33.jpg" alt="Produto 4" />
+      <h3>Macacão Luxe</h3>
+      <p>R$ 999,00</p>
+      <small>Até 4x de R$249,75</small>
+      <a href="produto4.html" class="btn">COMPRAR</a>
+    </div>
+  </section>
+
+  <!-- Categorias -->
+  <section class="section-title">CATEGORIAS</section>
+  <section class="categories">
+    <a href="vestidos.html"><img src="data:image/jpeg;base64,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" alt="Vestidos" /></a>
+    <a href="blazers.html"><img src="https://i.pinimg.com/236x/a4/d7/17/a4d7173fffdcab5fe234fc4e9456b2bc.jpg" alt="Blazers" /></a>
+    <a href="saias.html"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_748961-MLB82843922644_032025-F-mini-saia-feminina-casual-rodada-plissada-rosa-vero.webp" alt="Saias" /></a>
+    <a href="macacoes.html"><img src="https://a-static.mlcdn.com.br/800x560/vestido-feminino-prettygarden-2025-sem-alcas-rosa-tubular/nocnocasia/oob0dpqf4t62/72536e72b24764be87f9c440b672bb9c.jpeg" alt="Macacões" /></a>
+    <a href="acessorios.html"><img src="https://a-static.mlcdn.com.br/800x560/conjunto-de-pijama-ekouaer-silk-satin-para-mulheres-de-manga-curta-rosa/nocnocasia/oob0c45zhrtb/4e856244f33228888d38b7573a3b9c97.jpeg" alt="Acessórios" /></a>
+    <a href="novidades.html"><img src="https://i.pinimg.com/236x/9c/a1/36/9ca136f9efb1b730ce6594a05972ac88.jpg" alt="Novidades" /></a>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-content">
+      <p><strong>Email:</strong> contato@bellizza.com</p>
+      <p><strong>Instagram:</strong> @bellizza</p>
+      <p><strong>Facebook:</strong> /bellizza</p>
+      <p><strong>TikTok:</strong> @bellizza.oficial</p>
+      <p><a href="#">Atendimento</a> | <a href="#">Ajuda</a> | <a href="#">Institucional</a></p>
+    </div>
+  </footer>
+</body>
+</html>
